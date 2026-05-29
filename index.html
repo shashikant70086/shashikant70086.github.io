@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shashikant — Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen flex flex-col relative selection:bg-primary selection:text-white page-enter">
+    <div class="grain-overlay"></div>
+    <div class="blueprint-grid-bg"></div>
+
+    <header class="fixed top-0 w-full z-40 bg-background-sand/95 backdrop-blur-sm border-b border-blueprint-navy h-16 flex items-center px-6 md:px-12 justify-between">
+        <div class="flex items-center gap-4">
+            <span class="material-symbols-outlined text-text-main">terminal</span>
+            <h2 class="text-text-main text-lg font-bold tracking-tighter uppercase">SHASHIKANT // PORTFOLIO</h2>
+        </div>
+        <nav class="hidden md:flex gap-8 items-center h-full">
+            <a href="index.html" class="nav-link text-sm font-bold tracking-widest text-blueprint-navy hover:text-primary transition-colors uppercase">HOME</a>
+            <a href="about.html" class="nav-link text-sm font-bold tracking-widest text-blueprint-navy hover:text-primary transition-colors uppercase">ABOUT</a>
+            <a href="projects.html" class="nav-link text-sm font-bold tracking-widest text-blueprint-navy hover:text-primary transition-colors uppercase">PROJECTS</a>
+        </nav>
+        <div class="flex items-center gap-4 text-primary">
+            <span class="text-xs font-bold tracking-widest hidden sm:block animate-pulse">STATUS: ONLINE</span>
+        </div>
+    </header>
+
+    <main class="relative z-10 flex-grow pt-24 pb-12 px-6 md:px-12 flex flex-col w-full max-w-[1400px] mx-auto">
+        <section class="flex flex-col items-center justify-center min-h-[70vh] text-center">
+            <div class="absolute top-24 left-6 text-xs font-mono text-blueprint-navy hidden md:block">
+                <p>LAT: 00.0000° N</p>
+                <p>LNG: 00.0000° E</p>
+                <p class="mt-2 text-primary">LOC: Uttar Pradesh, India</p>
+            </div>
+
+            <div class="w-full max-w-4xl mb-12 relative">
+                <h1 id="hero-text" class="text-4xl md:text-6xl lg:text-7xl font-black leading-none tracking-tighter text-text-main uppercase cursor-default select-none hero-heading">
+                    Shashikant<br/>Robotics & AI Engineer
+                </h1>
+                <div class="absolute top-1/2 left-0 w-16 lg:w-32 h-px bg-blueprint-navy/50 -translate-y-1/2 hidden md:block"></div>
+                <div class="absolute top-1/2 right-0 w-16 lg:w-32 h-px bg-blueprint-navy/50 -translate-y-1/2 hidden md:block"></div>
+            </div>
+
+            <p class="max-w-2xl text-sm md:text-base text-blueprint-navy leading-relaxed mb-10">
+                Engineering student focused on robotics, embedded systems, computer vision, AI/ML, and autonomous aerial solutions. Experienced building intelligent robotics platforms, stereo-vision perception systems, ESP32/STM32 embedded architectures, and real-time autonomous navigation workflows.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="about.html" class="group relative flex h-14 min-w-[220px] items-center justify-center border border-blueprint-navy bg-surface-bone px-8 text-sm font-bold uppercase tracking-[0.05em] text-text-main hover:bg-text-main hover:text-background-sand transition-all bento-card">
+                    <span class="mr-2 opacity-50 group-hover:opacity-100">[CV]</span>
+                    <span>ABOUT ME</span>
+                </a>
+                <a href="projects.html" class="group relative flex h-14 min-w-[220px] items-center justify-center border border-blueprint-navy bg-surface-bone px-8 text-sm font-bold uppercase tracking-[0.05em] text-text-main hover:bg-text-main hover:text-background-sand transition-all bento-card">
+                    <span class="mr-2 opacity-50 group-hover:opacity-100">[PRJ]</span>
+                    <span>PROJECTS</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <div class="fixed bottom-0 w-full bg-surface-bone border-t border-blueprint-navy z-40">
+        <div class="flex items-center px-4 py-1 h-8">
+            <span class="material-symbols-outlined text-primary text-xs mr-3 animate-pulse">radio_button_checked</span>
+            <div class="overflow-hidden w-full relative h-full flex items-center">
+                <div class="text-[10px] font-mono tracking-widest text-blueprint-navy whitespace-nowrap overflow-hidden">
+                    SHASHIKANT // ECE (IoT) // ROBOTICS, AI, EMBEDDED SYSTEMS // PORTFOLIO
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
