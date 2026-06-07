@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects — Shashikant</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen flex flex-col relative selection:bg-primary selection:text-white page-enter">
+    <div class="grain-overlay"></div>
+    <div class="blueprint-grid-bg"></div>
+
+    <header class="fixed top-0 w-full z-40 bg-background-sand/95 backdrop-blur-sm border-b border-blueprint-navy h-16 flex items-center px-6 md:px-12 justify-between">
+        <div class="flex items-center gap-4">
+            <span class="material-symbols-outlined text-text-main">terminal</span>
+            <h2 class="text-text-main text-lg font-bold tracking-tighter uppercase">SHASHIKANT // PORTFOLIO</h2>
+        </div>
+        <nav class="hidden md:flex gap-8 items-center h-full">
+            <a href="index.html" class="nav-link text-sm font-bold tracking-widest text-blueprint-navy hover:text-primary transition-colors uppercase">HOME</a>
+            <a href="about.html" class="nav-link text-sm font-bold tracking-widest text-blueprint-navy hover:text-primary transition-colors uppercase">ABOUT</a>
+            <a href="projects.html" class="nav-link text-sm font-bold tracking-widest text-blueprint-navy hover:text-primary transition-colors uppercase">PROJECTS</a>
+        </nav>
+         <div class="flex items-center gap-4 text-primary">
+            <span class="text-xs font-bold tracking-widest hidden sm:block animate-pulse"> <span class="dot"></span> ROBOTICS & EMBEDDED SYSTEMS INTERN <br><span class="dot"></span> OPEN TO PROJECTS</span>
+        </div>
+    </header>
+
+    <main class="relative z-10 flex-grow pt-24 pb-12 px-6 md:px-12 flex flex-col w-full max-w-[1400px] mx-auto">
+        <div class="mb-8 border-l-4 border-primary pl-4">
+            <h1 class="text-3xl font-bold uppercase tracking-tight text-text-main">Featured Projects</h1>
+            <p class="text-blueprint-navy text-sm font-bold">&gt; SELECTED WORK.<br>&gt; CASE STUDIES.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <article class="bento-card flex flex-col min-h-[320px]">
+                <div class="h-32 w-full border-b border-blueprint-navy bg-text-main relative overflow-hidden flex items-center justify-center">
+                    <span class="material-symbols-outlined text-4xl text-primary">cloud</span>
+                    <div class="absolute top-2 right-2 flex gap-1">
+                        <span class="px-1.5 py-0.5 text-[9px] uppercase font-bold text-surface-bone bg-primary">AI</span>
+                    </div>
+                </div>
+                <div class="p-5 flex flex-col flex-grow justify-between bg-surface-bone">
+                    <div>
+                        <h3 class="text-lg font-bold text-text-main mb-2 leading-tight">Satellite-Based Atmospheric Intelligence</h3>
+                        <p class="text-xs text-blueprint-navy leading-relaxed">Built an ML pipeline to predict PM2.5 using satellite AOD, MERRA-2, INSAT-3D, and CPCB datasets with Streamlit dashboards.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4 text-[10px] text-primary">
+                        <span class="px-2 py-1 border border-primary">PyTorch</span>
+                        <span class="px-2 py-1 border border-primary">Streamlit</span>
+                        <span class="px-2 py-1 border border-primary">ResNet</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="bento-card flex flex-col min-h-[320px]">
+                <div class="h-32 w-full border-b border-blueprint-navy bg-text-main relative overflow-hidden flex items-center justify-center">
+                    <span class="material-symbols-outlined text-4xl text-primary">camera</span>
+                    <div class="absolute top-2 right-2 flex gap-1">
+                        <span class="px-1.5 py-0.5 text-[9px] uppercase font-bold text-text-main bg-surface-bone">VISION</span>
+                    </div>
+                </div>
+                <div class="p-5 flex flex-col flex-grow justify-between bg-surface-bone">
+                    <div>
+                        <h3 class="text-lg font-bold text-text-main mb-2 leading-tight">Stereo Vision & Autonomous Perception</h3>
+                        <p class="text-xs text-blueprint-navy leading-relaxed">Developed dual ESP32-CAM stereo vision depth estimation with YOLOv8 and TensorFlow for real-time robotic/UAV perception.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4 text-[10px] text-primary">
+                        <span class="px-2 py-1 border border-primary">OpenCV</span>
+                        <span class="px-2 py-1 border border-primary">YOLOv8</span>
+                        <span class="px-2 py-1 border border-primary">ESP32-CAM</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="bento-card flex flex-col min-h-[320px]">
+                <div class="h-32 w-full border-b border-blueprint-navy bg-text-main relative overflow-hidden flex items-center justify-center">
+                    <span class="material-symbols-outlined text-4xl text-primary">settings_remote</span>
+                    <div class="absolute top-2 right-2 flex gap-1">
+                        <span class="px-1.5 py-0.5 text-[9px] uppercase font-bold text-surface-bone bg-accent-rust">EMBEDDED</span>
+                    </div>
+                </div>
+                <div class="p-5 flex flex-col flex-grow justify-between bg-surface-bone">
+                    <div>
+                        <h3 class="text-lg font-bold text-text-main mb-2 leading-tight">Autonomous ESP32 Robotics Platform</h3>
+                        <p class="text-xs text-blueprint-navy leading-relaxed">Built an autonomous embedded robotics system with ultrasonic sensing, laptop processing, and obstacle-navigation logic.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4 text-[10px] text-primary">
+                        <span class="px-2 py-1 border border-primary">ESP32</span>
+                        <span class="px-2 py-1 border border-primary">Ultrasonic</span>
+                        <span class="px-2 py-1 border border-primary">Embedded</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="bento-card flex flex-col min-h-[320px]">
+                <div class="h-32 w-full border-b border-blueprint-navy bg-text-main relative overflow-hidden flex items-center justify-center">
+                    <span class="material-symbols-outlined text-4xl text-primary">alt_route</span>
+                    <div class="absolute top-2 right-2 flex gap-1">
+                        <span class="px-1.5 py-0.5 text-[9px] uppercase font-bold text-text-main bg-surface-bone">UAV</span>
+                    </div>
+                </div>
+                <div class="p-5 flex flex-col flex-grow justify-between bg-surface-bone">
+                    <div>
+                        <h3 class="text-lg font-bold text-text-main mb-2 leading-tight">AeroFollow Owner-Following System</h3>
+                        <p class="text-xs text-blueprint-navy leading-relaxed">Designed a sensor-fusion architecture for an autonomous owner-following trolley using vision tracking and localization concepts.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mt-4 text-[10px] text-primary">
+                        <span class="px-2 py-1 border border-primary">Sensor Fusion</span>
+                        <span class="px-2 py-1 border border-primary">Computer Vision</span>
+                        <span class="px-2 py-1 border border-primary">ROS2</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <section class="mt-10 bg-surface-bone border border-blueprint-navy p-8 bento-card">
+            <h2 class="text-2xl font-bold uppercase tracking-tight mb-4">Current Focus</h2>
+            <p class="text-sm leading-relaxed text-blueprint-navy">
+                Researching Liquid Neural Networks (LNNs) integrated with Transformer architectures for adaptive edge AI systems. Exploring real-time perception systems, efficient AI inference, sequential learning workflows, and autonomous UAV navigation for aerial robotics.
+            </p>
+        </section>
+    </main>
+
+    <div class="fixed bottom-0 w-full bg-surface-bone border-t border-blueprint-navy z-40">
+        <div class="flex items-center px-4 py-1 h-8">
+            <span class="material-symbols-outlined text-primary text-xs mr-3 animate-pulse">radio_button_checked</span>
+            <div class="overflow-hidden w-full relative h-full flex items-center">
+                <div class="text-[10px] font-mono tracking-widest text-blueprint-navy whitespace-nowrap overflow-hidden">
+                    SHASHIKANT // SATELLITE AI // STEREO VISION // AUTONOMOUS ROBOTICS
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

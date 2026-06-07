@@ -1,0 +1,11 @@
+backup/
+**/backup/
+old
+**/old
+*.old
+**/*.old
+# Ignore any file or directory with 'old' anywhere in its name (case-sensitive)
+**/*old*
+# Also cover common case variations
+**/*Old*
+**/*OLD*
